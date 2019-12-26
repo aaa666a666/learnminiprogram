@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
-<text class='title'>h</text>
-<button size='mini'>按钮</button>
+<view>Hello {{name}}</view>
+<view>年龄 {{age+20}}</view>
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+<view>当前计数:{{counter}}</view>
+<button size='mini' bindtap="handleBtnClick">+</button>
